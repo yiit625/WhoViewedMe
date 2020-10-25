@@ -11,6 +11,7 @@ C:\WhoViewedMe\src\main\java\com\example\Assignment\repository\ViewUserRepositor
 C:\WhoViewedMe\src\main\java\com\example\Assignment\enums\EnumStatusConverter.java
 C:\WhoViewedMe\src\main\java\com\example\Assignment\config\ResponsePayload.java
 C:\WhoViewedMe\src\main\java\com\example\Assignment\commons\AbstractAuditionEntity.java
+C:\WhoViewedMe\src\main\java\com\example\Assignment\config\SwaggerConfig.java
 C:\WhoViewedMe\src\main\java\com\example\Assignment\enums\EnumStatus.java
 C:\WhoViewedMe\src\main\java\com\example\Assignment\model\DeleteUserRequestModel.java
 C:\WhoViewedMe\src\main\java\com\example\Assignment\repository\UserRepository.java

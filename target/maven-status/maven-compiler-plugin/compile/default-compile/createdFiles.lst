@@ -1,3 +1,4 @@
+com\example\Assignment\config\SwaggerConfig.class
 com\example\Assignment\controller\UserController.class
 com\example\Assignment\enums\EnumStatus.class
 com\example\Assignment\enums\EnumStatusConverter.class
