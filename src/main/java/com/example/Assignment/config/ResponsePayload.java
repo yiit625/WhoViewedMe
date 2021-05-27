@@ -1,7 +1,7 @@
 package com.example.Assignment.config;
 
 public class ResponsePayload {
-    public Integer code;
+    public Integer status;
     public String message;
     public Boolean success;
     public ResponseEnum responseEnum;
@@ -10,8 +10,8 @@ public class ResponsePayload {
     public ResponsePayload(ResponseEnum responseEnum) {
         super();
         this.responseEnum = responseEnum;
-        this.code = responseEnum.getHttpStatusCode();
-        this.message = responseEnum.getDescription();
+        this.status = responseEnum.getHttpStatusCode();
+        this.message = responseEnum.getMessage();
         this.success = responseEnum.getIsSuccess();
     }
 
@@ -42,7 +42,7 @@ public class ResponsePayload {
 
     public ResponsePayload(Integer code, Boolean success) {
         this(success);
-        this.code = code;
+        this.status = code;
     }
 
     public ResponsePayload(Boolean success) {
@@ -60,6 +60,10 @@ public class ResponsePayload {
         this.data = data;
     }
 
+
+
+
+
     public ResponsePayload(ResponseEnum responseEnum, String message, Boolean success, Object data) {
         this(responseEnum);
         this.message = message;
@@ -68,11 +72,11 @@ public class ResponsePayload {
     }
 
     public Integer getCode() {
-        return code;
+        return status;
     }
 
     public void setCode(Integer code) {
-        this.code = code;
+        this.status = code;
     }
 
     public String getMessage() {

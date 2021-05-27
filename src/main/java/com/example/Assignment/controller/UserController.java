@@ -11,6 +11,7 @@ import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
 
+import java.math.BigInteger;
 import java.util.List;
 
 
@@ -25,6 +26,8 @@ public class UserController {
     public ResponsePayload createUser(@RequestBody CreateUserRequestModel model) {
 
         try {
+
+            
 
 
             User insertedEntity = userService.createUser(model);
@@ -84,7 +87,7 @@ public class UserController {
     }
 
 
-    @PostMapping(value = "/list-user",
+    @GetMapping(value = "/list-user",
             consumes = MediaType.APPLICATION_JSON_VALUE,
             produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponsePayload listUser() {
@@ -142,6 +145,30 @@ public class UserController {
         } catch (Exception ex) {
             return new ResponsePayload(ResponseEnum.NOTFOUND);
         }
+    }
+
+    @PatchMapping(value = "/tasks/{id}", consumes = MediaType.APPLICATION_JSON_VALUE, produces = MediaType.APPLICATION_JSON_VALUE)
+    public ResponsePayload updateTask(@RequestBody UpdateUserRequestModel model) {
+
+        try {
+
+
+            User insertedEntity = userService.updateUser(model);
+
+            if (insertedEntity != null) {
+
+                return new ResponsePayload(ResponseEnum.OK, insertedEntity);
+            }
+            return new ResponsePayload(ResponseEnum.NOTFOUND);
+
+
+        } catch (DataIntegrityViolationException ex) {
+            return new ResponsePayload(ResponseEnum.NOTFOUND);
+        } catch (Exception ex) {
+            return new ResponsePayload(ResponseEnum.NOTFOUND);
+        }
+
+
     }
 
 

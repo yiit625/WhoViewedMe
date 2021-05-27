@@ -11,6 +11,7 @@ import lombok.Setter;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
+import java.math.BigInteger;
 import java.util.Date;
 
 @Getter
@@ -32,6 +33,8 @@ public class User extends AbstractAuditionGuidKeyEntity {
 
     @Column(name = "created_date")
     private Date createdDate;
+
+
 
 
 }
