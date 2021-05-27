@@ -37,16 +37,7 @@ public class AssignmentApplication {
 			System.out.print(backtext[i]);
 		}
 		System.out.println();
-
-
-
-
-
-
-
-
-
-		 	SELAM SLEMA
+		
 	/*	String keyword = "hello";
 		byte[] keytest = keyword.getBytes(); //convert keyword to byte
 
