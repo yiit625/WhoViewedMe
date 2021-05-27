@@ -37,21 +37,7 @@ public class AssignmentApplication {
 			System.out.print(backtext[i]);
 		}
 		System.out.println();
-
-
-<<<<<<< HEAD
-		SELAM
-				Yigit
-=======
-
-
-
-
-
-
-
-		 	SELAM SLEMA
->>>>>>> parent of c8ac801... deneme
+		
 	/*	String keyword = "hello";
 		byte[] keytest = keyword.getBytes(); //convert keyword to byte
 
@@ -89,8 +75,6 @@ public class AssignmentApplication {
 		return localeResolver;
 	}*/
 
-
-	yigit
 }
 
 
