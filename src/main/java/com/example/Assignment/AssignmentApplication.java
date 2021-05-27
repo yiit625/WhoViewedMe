@@ -38,6 +38,15 @@ public class AssignmentApplication {
 		}
 		System.out.println();
 
+
+
+
+
+
+
+
+
+		 	
 	/*	String keyword = "hello";
 		byte[] keytest = keyword.getBytes(); //convert keyword to byte
 
