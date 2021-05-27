@@ -39,8 +39,19 @@ public class AssignmentApplication {
 		System.out.println();
 
 
+<<<<<<< HEAD
 		SELAM
 				Yigit
+=======
+
+
+
+
+
+
+
+		 	SELAM SLEMA
+>>>>>>> parent of c8ac801... deneme
 	/*	String keyword = "hello";
 		byte[] keytest = keyword.getBytes(); //convert keyword to byte
 
